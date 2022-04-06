@@ -18,30 +18,36 @@ USE `bank`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `depos`
+-- Table structure for table `register`
 --
 
-DROP TABLE IF EXISTS `depos`;
+DROP TABLE IF EXISTS `register`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `depos` (
+CREATE TABLE `register` (
   `cin` varchar(20) DEFAULT NULL,
   `firstname` varchar(20) DEFAULT NULL,
   `lastname` varchar(20) DEFAULT NULL,
-  `pays` varchar(20) DEFAULT NULL,
+  `contact` varchar(20) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `pack` varchar(20) DEFAULT NULL,
   `card` varchar(20) DEFAULT NULL,
-  `amount` varchar(20) DEFAULT NULL
+  `dob` date DEFAULT NULL,
+  `pay` varchar(20) DEFAULT NULL,
+  `balance` varchar(20) DEFAULT NULL,
+  `deposit` varchar(20) DEFAULT NULL,
+  `picture` blob
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `depos`
+-- Dumping data for table `register`
 --
 
-LOCK TABLES `depos` WRITE;
-/*!40000 ALTER TABLE `depos` DISABLE KEYS */;
-INSERT INTO `depos` VALUES ('GA15','ahmed','naji','morocco','skrill','56 $'),('GA15','ahmed','naji','morocco','skrill','56 £'),('GA15','ahmed','naji','morocco','skrill','56 $'),('GA15','ahmed','naji','morocco','skrill','560 $');
-/*!40000 ALTER TABLE `depos` ENABLE KEYS */;
+LOCK TABLES `register` WRITE;
+/*!40000 ALTER TABLE `register` DISABLE KEYS */;
+INSERT INTO `register` VALUES ('GI533','Chkaili','Mohammed','0606294340','123','pack e-commerce','Mastercard',NULL,NULL,NULL,NULL,NULL),('5645','lana','rhoades','132','0202','pack adultes','Visa','1999-07-23',NULL,NULL,NULL,NULL),('56','maria','benethez','265','123','pack étudiant','skrill','2022-03-01',NULL,NULL,NULL,NULL),('GI533','lily','lou','156','0102','pack e-commerce','Visa','2022-03-01','france',NULL,NULL,NULL),('','','','','','','','2022-03-01','',NULL,NULL,NULL),('64','45','65','45','4','pack adultes','Visa','2022-03-01','germany',NULL,NULL,NULL),('abc123','hamza','benstitou','213','33','pack jeune','skrill','2022-03-01','usa',NULL,NULL,NULL),('GA15','ahmed','naji','160','00','pack adultes','skrill','2009-01-26','morocco','150000$','150 $',NULL),(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'30',NULL),(NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,NULL,'15',NULL);
+/*!40000 ALTER TABLE `register` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

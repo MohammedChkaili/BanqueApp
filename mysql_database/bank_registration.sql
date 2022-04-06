@@ -18,30 +18,31 @@ USE `bank`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `depos`
+-- Table structure for table `registration`
 --
 
-DROP TABLE IF EXISTS `depos`;
+DROP TABLE IF EXISTS `registration`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `depos` (
+CREATE TABLE `registration` (
   `cin` varchar(20) DEFAULT NULL,
   `firstname` varchar(20) DEFAULT NULL,
   `lastname` varchar(20) DEFAULT NULL,
-  `pays` varchar(20) DEFAULT NULL,
-  `card` varchar(20) DEFAULT NULL,
-  `amount` varchar(20) DEFAULT NULL
+  `contact` varchar(20) DEFAULT NULL,
+  `password` varchar(20) DEFAULT NULL,
+  `pack` varchar(20) DEFAULT NULL,
+  `card` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `depos`
+-- Dumping data for table `registration`
 --
 
-LOCK TABLES `depos` WRITE;
-/*!40000 ALTER TABLE `depos` DISABLE KEYS */;
-INSERT INTO `depos` VALUES ('GA15','ahmed','naji','morocco','skrill','56 $'),('GA15','ahmed','naji','morocco','skrill','56 £'),('GA15','ahmed','naji','morocco','skrill','56 $'),('GA15','ahmed','naji','morocco','skrill','560 $');
-/*!40000 ALTER TABLE `depos` ENABLE KEYS */;
+LOCK TABLES `registration` WRITE;
+/*!40000 ALTER TABLE `registration` DISABLE KEYS */;
+INSERT INTO `registration` VALUES ('5','mlm','lm','45','123',NULL,NULL),('','','','','',NULL,NULL),('','','','','',NULL,NULL),('','','','','','pack e-commerce','Visa'),('','','','','','',''),('','','','','','pack adultes','skrill'),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','',''),('','','','','','pack étudiant','Visa'),('','','','','','pack jeune','Visa'),('','','','','','pack étudiant','skrill'),('','','','','','',''),('','','','','','',''),('','','','','','pack adultes','skrill'),('','','','','','pack étudiant','Mastercard'),('','','','','','pack adultes','skrill'),('','','','','','pack adultes','skrill'),('','','','','','pack adultes','skrill'),('','','','','','pack adultes','skrill'),('','','','','','',''),('','','','','','pack étudiant','Visa'),('','','','','','',''),('GI533','','','','123','pack étudiant','Visa'),('gi','','','','123','pack étudiant','Mastercard'),('','','','','','pack adultes','skrill'),('ddd','sss','sdsd','15','21','pack e-commerce','Mastercard');
+/*!40000 ALTER TABLE `registration` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

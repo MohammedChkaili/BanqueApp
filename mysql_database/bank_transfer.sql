@@ -18,30 +18,29 @@ USE `bank`;
 /*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
 
 --
--- Table structure for table `depos`
+-- Table structure for table `transfer`
 --
 
-DROP TABLE IF EXISTS `depos`;
+DROP TABLE IF EXISTS `transfer`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
-CREATE TABLE `depos` (
+CREATE TABLE `transfer` (
   `cin` varchar(20) DEFAULT NULL,
   `firstname` varchar(20) DEFAULT NULL,
   `lastname` varchar(20) DEFAULT NULL,
-  `pays` varchar(20) DEFAULT NULL,
-  `card` varchar(20) DEFAULT NULL,
+  `accountnumber` varchar(20) DEFAULT NULL,
   `amount` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
--- Dumping data for table `depos`
+-- Dumping data for table `transfer`
 --
 
-LOCK TABLES `depos` WRITE;
-/*!40000 ALTER TABLE `depos` DISABLE KEYS */;
-INSERT INTO `depos` VALUES ('GA15','ahmed','naji','morocco','skrill','56 $'),('GA15','ahmed','naji','morocco','skrill','56 £'),('GA15','ahmed','naji','morocco','skrill','56 $'),('GA15','ahmed','naji','morocco','skrill','560 $');
-/*!40000 ALTER TABLE `depos` ENABLE KEYS */;
+LOCK TABLES `transfer` WRITE;
+/*!40000 ALTER TABLE `transfer` DISABLE KEYS */;
+INSERT INTO `transfer` VALUES ('GA15','ahmed','naji','23156131','55 £'),('GA15','ahmed','naji','0235121','450 £'),('GA15','ahmed','naji','1265412','90 $'),('GA15','ahmed','naji','',''),('GA15','ahmed','naji','5321654','250');
+/*!40000 ALTER TABLE `transfer` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
